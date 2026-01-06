@@ -6,7 +6,7 @@ Ce flow Node-RED écoute un topic MQTT (uplinks ChirpStack), **extrait le champ 
 
 - **MQTT In**
   - Broker : `srv-chirpstack.insa-toulouse.fr:1883`
-  - Topic : `application/2fc05488-1aaa-49cf-a35a-cf58fae84647/device/0004a30b0110c16d/event/#`
+  - Topic : `application/2fc05488-1aaa-49cf-a35a-cf58fae84647/device/0004a30b0110c16d/event/up`
   - QoS : `2` 
 - **Décodage**
   - Extraction de `payload.data`
