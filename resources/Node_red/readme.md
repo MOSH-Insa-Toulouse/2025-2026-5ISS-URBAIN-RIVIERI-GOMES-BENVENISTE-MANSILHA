@@ -12,10 +12,10 @@ Ce flow Node-RED écoute un topic MQTT (uplinks ChirpStack), **extrait le champ 
   - Extraction de `payload.data`
   - `Base64 -> UTF-8 -> Number (base 10)` 
 - **Dashboard**
-  - Jauge `Actual_Sensor_Value` (0 → 1000, zones vert/jaune/rouge)
+  - Jauge `Actual_Sensor_Value` (0 → 8000, zones vert/jaune/rouge)
   - Courbe `Sensor_value_History` (historique ~1h)
 - **Alerte**
-  - Si `valeur >= 900` → `DANGER!` + audio + texte 
+  - Si `valeur >= 7000` → `DANGER!` + audio + texte 
 
 ## Prérequis
 
