@@ -12,3 +12,14 @@ As part of this project, one part was dedicated to designing a stage for conditi
 To ensure the full integrity of the signal and to ensure a good measurement of the signal for 
 
 <img width="311" height="143" alt="ltspice_fc_table" src="https://github.com/user-attachments/assets/fb7688a2-4cde-467b-be0f-f81614f67151" />
+
+## Electrical schematic and PCB design
+
+After all these simulation and in parallel with the software development of the ESP32 and its interaction with the LoRa module, the electronic board diagram was entered and the complete PCB routing was carried out. The electronic board diagram includes female connectors to facilitate the integration of the microcontroller and the LoRa module. With that a two-pins connector is included to ensure the correct power supply to the gas sensor's heating element. A buzzer has also been added to provide audible alerts when gas is detected, as well as a button for various uses, such as sending data or requesting a connection with the LoRa gateway. 
+
+<img width="1989" height="1099" alt="Capture d&#39;écran 2026-01-06 163123" src="https://github.com/user-attachments/assets/c697286b-230c-4aa2-9af6-06584935a82d" />
+
+The electronic board diagram done, the PCB routing has been done and the goal was to minimized the size of the whole card. As a result, we decided to route on both sides (top and bottom) to save space and make it compact and to outsource PCB manufacturing to JLC PCB to have a more clean product. 
+
+<img width="712" height="1153" alt="Capture d&#39;écran 2026-01-06 163302" src="https://github.com/user-attachments/assets/fa7053f5-c1f2-408f-9439-61978cafb3b5" />
+
