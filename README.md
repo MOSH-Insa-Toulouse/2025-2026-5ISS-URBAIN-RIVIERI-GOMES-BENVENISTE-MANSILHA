@@ -7,6 +7,10 @@ The first step in this project is to manufacture a gas sensor. This sensor was m
 
 The sensor is composed of several elements that are worth detailing. First, there are interdigitated aluminum combs on which WO₃ nanoparticles have been deposited and organized by dielectrophoresis. Next, there is an n-doped polysilicon heating resistor, which raises the temperature inside the sensor, improving the surface reaction between the WO₃ nanoparticles and the gas. Finally, there is an aluminum thermistor that measures the temperature inside the sensor.
 
-![gas sensor](images/image.png)
+![gas sensor](images/sensor-schematic.png)
+
+The manufacturing process for this sensor involves a large number of steps, but the most important ones are the photolithography steps. Photolithography enables the formation of the different layers required for the sensor to function. We start with a Si/SiO₂ substrate onto which a layer of polysilicon is deposited using the Low Pressure Chemical Vapor Deposition (LPCVD) technique. The polysilicon is n-doped by diffusing phosphorus (P) into it. An initial photolithography step is used to obtain the correct pattern for the polysilicon layer. A second photolithography step is then used to create the SiO₂ insulation layer with openings. Finally, a last photolithography step is used to create the electrodes from a deposited aluminum layer.
+
+![gas sensor process](images/sensor-process.png)
 
 
