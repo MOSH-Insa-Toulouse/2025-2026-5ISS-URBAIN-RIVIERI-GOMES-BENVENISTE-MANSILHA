@@ -152,6 +152,8 @@ We use one library for the Lora moduele:
 
 The Node-RED flow listens to an MQTT topic (ChirpStack uplinks), **extracts the `data` field**, **decodes it from Base64**, then **converts it to a base-10 number**. The value is displayed on a **dashboard** (gauge + history). A **“DANGER!”** alert (text + audio) is triggered above a threshold.
 
+![Node_red_net](images/Pasted image.png)
+
 ### Features
 
 * **MQTT In**
@@ -188,6 +190,7 @@ npm install node-red-dashboard
 # if needed (if ui_audio is "unknown node type")
 npm install node-red-contrib-ui-audio
 ```
+
 
 
 
