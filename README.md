@@ -106,11 +106,11 @@ Transmission happens **every 5 seconds** or **when the button is pressed**. An *
 
 | Element                 | ESP32 GPIO | Type   | Note                                                   |
 | ----------------------- | ---------: | ------ | ------------------------------------------------------ |
-| Gas sensor (analog)     | **GPIO36** | ADC1   | `analogRead(GAS_PIN)`                                  |
-| Button                  | **GPIO22** | input  | in your code: `INPUT` (often better as `INPUT_PULLUP`) |
+| Gas sensor (analog)     | **GPIO36** | ADC1   | reads the analog value after the filter                |
+| Button                  | **GPIO22** | input  | wired in pull-up mode                                  |
 | Buzzer                  | **GPIO23** | output | beep on each send                                      |
-| LED (built-in)          |  **GPIO2** | output | LED on during TX                                       |
-| “Temperature” (current) |  **GPIO2** | ❌     | **Conflict** with LED + **not ADC**                    |
+| LED (built-in)          |  **GPIO2** | output | LED on while sending                                   |
+| “Temperature” (analog ) |  **GPIO2** | input  | reads the analog value aftera a voltage divider        |
 
 ---
 
@@ -171,6 +171,7 @@ npm install node-red-contrib-ui-audio
 
 
 ## Conclusion
+
 
 
 
