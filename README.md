@@ -151,6 +151,7 @@ Then to display the measurements and the result of the LoRa transmission.
 <img width="497" height="136" alt="image" src="https://github.com/user-attachments/assets/91a158d8-038f-46b2-b6dd-bb464bc371bc" />
 <img width="472" height="131" alt="image" src="https://github.com/user-attachments/assets/f84f77e9-f38b-4815-bc09-2e9d5271da75" />
 
+
 > ⚠️ **Important note** the serial monitor is only useful for debugging and that the Node-RED dashboard shown below is the user interface.
 
 ## Node-RED
@@ -193,6 +194,7 @@ npm install node-red-dashboard
 # if needed (if ui_audio is "unknown node type")
 npm install node-red-contrib-ui-audio
 ```
+
 
 
 
