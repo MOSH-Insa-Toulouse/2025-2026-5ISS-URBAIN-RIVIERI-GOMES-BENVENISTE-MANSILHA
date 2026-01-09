@@ -110,7 +110,7 @@ Transmission happens **every 5 seconds** or **when the button is pressed**. An *
 | Button                  | **GPIO22** | input  | wired in pull-up mode                                  |
 | Buzzer                  | **GPIO23** | output | beep on each send                                      |
 | LED (built-in)          |  **GPIO2** | output | LED on while sending                                   |
-| “Temperature” (analog ) |  **GPIO2** | input  | reads the analog value aftera a voltage divider        |
+| Temperature (analog)    | **GPIO15** | input  | reads the analog value aftera a voltage divider        |
 
 ---
 
@@ -118,13 +118,27 @@ Transmission happens **every 5 seconds** or **when the button is pressed**. An *
 
 #### Arduino library
 
-* `rn2xx3`
-
-Include in the code:
+We use one library for the Lora moduele:
 
 ```cpp
 #include <rn2xx3.h>
 ```
+### Features
+
+- UART connection between ESP32 and RN2483 with `Serial2`
+- Join LoRaWAN in **OTAA** (joinEUI / appKey)
+- Reading:
+  - button (`digitalRead`)
+  - gas (`analogRead`)
+  - temperature (`analogRead`)
+- ADC conversion → voltage (0–3.3 V)
+- Calculation of equivalent resistance (gain circuit) then conversion to **ppm**
+- LoRaWAN transmission:
+  - **every 5 seconds** (timer)
+  - or **immediately** when the button is pressed
+- User feedback:
+  - **2 short beeps** if successful
+  - **1 long beep** if unsuccessful
 
 ## Node-RED
 
@@ -166,3 +180,10 @@ npm install node-red-dashboard
 # if needed (if ui_audio is "unknown node type")
 npm install node-red-contrib-ui-audio
 ```
+
+
+
+
+
+
+
