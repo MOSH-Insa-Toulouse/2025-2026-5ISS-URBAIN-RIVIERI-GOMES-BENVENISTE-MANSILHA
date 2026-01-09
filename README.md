@@ -20,9 +20,9 @@ As part of this project, one part was dedicated to designing a stage for conditi
 
 To ensure good signal quality, several filters have been installed. A bandwidth of 1 Hz is sufficient to extract useful information from the sensor. Three filters have been used: 
 
-- passive filter at the input to prevent HF noise from causing distortion in the input stages: R0, C1, and R1.
-
-
+- a passive filter at the input to prevent HF noise from causing distortion in the input stages: R0, C1, and R1.
+- an active filter at the operational amplifier level : R3 and C4.
+- a passive filter at the output of the circuit to remove noise introduced during processing (power supply noise, clock noise) : C2 and R6.
 
 ![ltspice_filter_table](images/ltspice_fc_table.png)
 
