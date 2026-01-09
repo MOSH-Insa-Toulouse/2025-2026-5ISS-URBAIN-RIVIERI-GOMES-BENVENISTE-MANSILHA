@@ -1,4 +1,22 @@
 # 2025-2026-5ISS-URBAIN-RIVIERI-GOMES-BENVENISTE-MANSILHA
+
+## Table of Contents
+
+- [2025-2026-5ISS-URBAIN-RIVIERI-GOMES-BENVENISTE-MANSILHA](#2025-2026-5iss-urbain-rivieri-gomes-benveniste-mansilha)
+  - [Introduction](#introduction)
+  - [Gas sensor fabrication](#gas-sensor-fabrication)
+  - [Simulation on LTspice](#simulation-on-ltspice)
+  - [PCB design on KiCad](#pcb-design-on-kicad)
+  - [Embedded code](#embedded-code)
+    - [Required hardware](#required-hardware)
+    - [Pinout (ESP32 ↔ RN2xx3 / Sensors / I/O)](#pinout-esp32--rn2xx3--sensors--io)
+    - [Dependencies](#dependencies)
+    - [Features](#features)
+    - [Serial monitor](#serial-monitor)
+  - [Node-RED](#node-red)
+    - [Features](#features-1)
+    - [Prerequisites](#prerequisites)
+
 ## Introduction
 The objective of this project is to develop an electronic card on which we have integrated a gas sensor manufactured in the clean room at AIME (Inter-University Micro-Nano Electronics Laboratory). The electronic board includes an analog circuit for conditioning the sensor signal, a microcontroller (ESP32) for receiving the conditioned sensor signal and communicating with the other components on the board, a LoRa module for sending sensor data over a LoRa network using Chirpstack, and a buzzer to alert when a gas concentration threshold has been exceeded.
 
@@ -194,6 +212,7 @@ npm install node-red-dashboard
 # if needed (if ui_audio is "unknown node type")
 npm install node-red-contrib-ui-audio
 ```
+
 
 
 
