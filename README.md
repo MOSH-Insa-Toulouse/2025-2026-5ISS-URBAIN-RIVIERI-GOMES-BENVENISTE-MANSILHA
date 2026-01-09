@@ -21,23 +21,24 @@ After all these simulation and in parallel with the software development of the 
 
 <img width="1989" height="1099" alt="Capture d&#39;écran 2026-01-06 163123" src="https://github.com/user-attachments/assets/c697286b-230c-4aa2-9af6-06584935a82d" />
 
-| Référence        | Quantité | Valeur / Description        | Empreinte (Footprint)                                               | Datasheet |
-|------------------|----------|-----------------------------|----------------------------------------------------------------------|-----------|
-| BZ1              | 1        | Buzzer                      | Buzzer_Beeper:Buzzer_12x9.5RM7.6                                     | –         |
-| C1, C3, C4       | 3        | 100 nF                      | Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder            | –         |
-| C2               | 1        | 1 µF                        | Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder            | –         |
-| J1               | 1        | Connecteur 1x02             | Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical           | –         |
-| J2               | 1        | Connecteur module LoRa      | Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical           | –         |
-| J3               | 1        | Connecteur femelle ESP      | Library:Connecteur femelle ESP                                      | –         |
-| R1, R6, R8       | 3        | 10 kΩ                       | Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder             | –         |
-| R2, R4           | 2        | 100 kΩ                      | Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder             | –         |
-| R3, R5           | 2        | 1 kΩ                        | Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder             | –         |
-| SW2              | 1        | Bouton poussoir double      | Button_Switch_THT:SW_PUSH-12mm                                      | –         |
-| U2               | 1        | Capteur de gaz              | Package_TO_SOT_THT:TO-5-10                                          | –         |
-| U3               | 1        | LTC1050CN8-PBF (AOP)        | footprints:PDIP-8_N_LIT                                             | [Datasheet]
+| Référence        | Quantité | Valeur / Description        | 
+|------------------|----------|-----------------------------|
+| BZ1              | 1        | Buzzer                      | 
+| C1, C3, C4       | 3        | 100 nF                      | 
+| C2               | 1        | 1 µF                        | 
+| J1               | 1        | Connecteur 1x02             | 
+| J2               | 1        | Connecteur module LoRa      | 
+| J3               | 1        | Connecteur femelle ESP      | 
+| R1, R6, R8       | 3        | 10 kΩ                       | 
+| R2, R4           | 2        | 100 kΩ                      | 
+| R3, R5           | 2        | 1 kΩ                        | 
+| SW2              | 1        | Bouton poussoir double      | 
+| U2               | 1        | Capteur de gaz              | 
+| U3               | 1        | LTC1050CN8-PBF (AOP)        | 
 
 The electronic board diagram done, the PCB routing has been done and the goal was to minimized the size of the whole card. As a result, we decided to route on both sides (top and bottom) to save space and make it compact and to outsource PCB manufacturing to JLC PCB to have a more clean product. 
 
 <img width="712" height="1153" alt="Capture d&#39;écran 2026-01-06 163302" src="https://github.com/user-attachments/assets/fa7053f5-c1f2-408f-9439-61978cafb3b5" />
+
 
 
