@@ -20,12 +20,19 @@ As part of this project, one part was dedicated to designing a stage for conditi
 
 To ensure good signal quality, several filters have been installed. A bandwidth of 1 Hz is sufficient to extract useful information from the sensor. Three filters have been used: 
 
-- a passive filter at the input to prevent HF noise from causing distortion in the input stages: R0, C1, and R1.
-- an active filter at the operational amplifier level : R3 and C4.
-- a passive filter at the output of the circuit to remove noise introduced during processing (power supply noise, clock noise) : C2 and R6.
+- a passive filter F1 at the input to prevent HF noise from causing distortion in the input stages: R0, C1, and R1.
+- an active filter F2 at the operational amplifier level : R3 and C4.
+- a passive filter F3 at the output of the circuit to remove noise introduced during processing (power supply noise, clock noise) : C2 and R6.
 
 ![ltspice_filter_table](images/ltspice_fc_table.PNG)
 
+Using an LTspice simulation, we were able to determine the frequency response (frequency gain) of each filter and also of the entire circuit. The Bode diagram of the active filter is as follows :
+
+![ltspice_fc2](images/ltspice_trans_impedance_amplifier_fc2.png)
+
+The Bode diagram of the passive filter at the output of the circuit is as follows :
+
+![ltspice_fc3](images/ltspice_trans_impedance_amplifier_fc3.png)
 
 
 
