@@ -44,7 +44,7 @@ After all these simulation and in parallel with the software development of the 
 
 #### Here is the electrical schematic of the board:
 
-<img width="1989" height="1099" alt="Capture d&#39;écran 2026-01-06 163123" src="https://github.com/user-attachments/assets/c697286b-230c-4aa2-9af6-06584935a82d" />
+<img width="1804" height="1016" alt="Capture d&#39;écran 2026-01-06 163123" src="https://github.com/user-attachments/assets/67ab726c-5327-42db-a129-6be5d858a010" />
 
 #### We gathered all the components we used for this board: 
 
@@ -67,7 +67,7 @@ The electronic board diagram done, the PCB routing has been done and the goal wa
 
 #### Here is the final PCB layout: 
 
-<img width="356" height="576.5" alt="Capture d&#39;écran 2026-01-06 163302" src="https://github.com/user-attachments/assets/fa7053f5-c1f2-408f-9439-61978cafb3b5" />
+<img width="324.5" height="572" alt="Capture d&#39;écran 2026-01-06 163302" src="https://github.com/user-attachments/assets/ccad4dac-c555-4195-80d6-0415d840acee" />
 
 
 ## Embedded code
@@ -194,6 +194,7 @@ npm install node-red-dashboard
 # if needed (if ui_audio is "unknown node type")
 npm install node-red-contrib-ui-audio
 ```
+
 
 
 
