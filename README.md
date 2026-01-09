@@ -143,9 +143,11 @@ We use one library for the Lora moduele:
 ### Serial monitor
 
 The serial monitor is used to display important information during the LoRa connection phase:
+
 <img width="622" height="93" alt="image" src="https://github.com/user-attachments/assets/8634cf3d-d1a3-4822-ba61-6452e3d0bc63" />
 
 Then to display the measurements and the result of the LoRa transmission.
+
 <img width="497" height="136" alt="image" src="https://github.com/user-attachments/assets/91a158d8-038f-46b2-b6dd-bb464bc371bc" />
 <img width="472" height="131" alt="image" src="https://github.com/user-attachments/assets/f84f77e9-f38b-4815-bc09-2e9d5271da75" />
 
@@ -191,6 +193,7 @@ npm install node-red-dashboard
 # if needed (if ui_audio is "unknown node type")
 npm install node-red-contrib-ui-audio
 ```
+
 
 
 
