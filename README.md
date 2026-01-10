@@ -87,6 +87,14 @@ The electronic board diagram done, the PCB routing has been done and the goal wa
 
 <img width="324.5" height="572" alt="Capture d&#39;écran 2026-01-06 163302" src="https://github.com/user-attachments/assets/ccad4dac-c555-4195-80d6-0415d840acee" />
 
+#### Possible improvements : 
+
+In order to improve the design, we would have redesigned the PCB to move from a "shield and external modules" approach to a fully integrated board, with a stronger focus on EMC and measurement robustness. Our current design is functional, but the use of separate ESP32 and LoRa extension boards introduces additional interconnections and uncontrolled return paths, which can create unwanted radiated emissions and reduce immunity.
+
+A next iteration would therefore integrate the microcontroller and the LoRa transceiver directly onto the PCB, reducing cable/connector effects, tightening current return loops, and allowing a cleaner partition between analog and digital domains. We would also consider adding a metallic shield can over the RF and high-speed digital area to limit radiation and improve repeatability in real environments.
+
+On the sensing side, we would improve the analog acquisition by implementing a true differential measurement of the gas sensor signal, combined with careful routing such as matched pairs, short and symmetric traces, controlled return paths, separation from RF/UART lines, and a robust grounding strategy. For grounding, we would likely separate analog ground and digital ground (processing + transmission vs sensing), then link the planes at a controlled point using appropriate ferrites to filter coupling between both domains. This would increase noise rejection and make the resistance/ppm estimation more stable. Overall, this redesign would aim to transform the prototype into a more product-like node.
+
 
 ## Embedded code
 
@@ -212,6 +220,7 @@ npm install node-red-dashboard
 # if needed (if ui_audio is "unknown node type")
 npm install node-red-contrib-ui-audio
 ```
+
 
 
 
